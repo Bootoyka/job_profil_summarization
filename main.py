@@ -1,16 +1,22 @@
-# This is a sample Python script.
+from serpapi import GoogleSearch
+import os
+from dotenv import load_dotenv
 
-# Press Maj+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+def test_serp():
+    api_key = os.getenv("SERPAPI_PRIVATE_KEY")
+    params = {
+        "engine": "google_jobs",
+        "q": "Java Developer",
+        "ltype": "1",
+        "hl": "en",
+        "api_key": f"{api_key}"
+    }
 
+    search = GoogleSearch(params)
+    results = search.get_dict()
+    jobs_results = results["jobs_results"]
+    print(jobs_results)
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    load_dotenv()
+    test_serp()
