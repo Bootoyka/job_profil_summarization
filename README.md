@@ -33,12 +33,12 @@ Replace your_serpapi_api_key_here with your actual SerpApi API key.
 Run the script main.py from the command line with the desired search type and query:
 
 ```bash
-python main.py candidate "Python developer"
+python main.py candidate "Python Developer"
 ```
 
 or 
 
 ```bash
-python main.py offer "software engineer"
+python main.py offer "software Engineer"
 ```
 
