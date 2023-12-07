@@ -10,7 +10,7 @@ This Python script allows you to perform Google searches using the SerpApi servi
 ## Setup
 1. Clone this repository:
 ```bash
-git clone https://github.com/your-usernam/job_profil_summarization.git
+git clone https://github.com/Bootoyka/job_profil_summarization.git
 ```
 >Don't forget to change your username here
 2. Navigate to the project directory:
