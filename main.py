@@ -37,10 +37,11 @@ def candidates_research(query, api_key):
 if __name__ == '__main__':
     load_dotenv()
     api_key = os.getenv("SERPAPI_PRIVATE_KEY")
-    query = 'site:linkedin.com/in/ AND "Python developer"'
     parser = argparse.ArgumentParser(description='Google researches for candidates or offers.')
     parser.add_argument('type', choices=['candidate', 'offer'], help='What kind of research (candidate or offer)')
+    parser.add_argument('query', help='The query to search for')
     args = parser.parse_args()
+    query = f'site:linkedin.com/in/ AND {args.query}'
 
 
     if args.type == 'candidate':
