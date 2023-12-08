@@ -4,7 +4,7 @@ This Python script allows you to perform Google searches using the SerpApi servi
 ## Prerequisites
 - Python 3.x installed
 - SerpApi API key.
-- You can obtain it by signing up at https://serpapi.com/.
+>You can obtain it by signing up at https://serpapi.com/.
 - A .env file containing your SerpApi API key.
 - See the section below on how to set up your environment variables.
 ## Setup
